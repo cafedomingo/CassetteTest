@@ -1,0 +1,17 @@
+﻿@{
+    Bundles.Reference( "~/Content/Core/Main.less");
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    @Bundles.RenderStylesheets( "Core" )
+    @Bundles.RenderStylesheets()
+</head>
+
+<body>
+    @RenderBody()
+</body>
+</html>
